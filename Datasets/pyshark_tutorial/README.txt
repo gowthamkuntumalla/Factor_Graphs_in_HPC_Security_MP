@@ -1,0 +1,1 @@
+Copy and Run this tutorial inside your virtualenv folder. It has all the dependencies installed.
