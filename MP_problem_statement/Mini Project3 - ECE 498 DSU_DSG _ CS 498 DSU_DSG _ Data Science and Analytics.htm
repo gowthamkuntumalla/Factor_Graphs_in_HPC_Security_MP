@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0087)https://courses.grainger.illinois.edu/ece498dsu/sp2020/assignments/mini-project3/#task0 -->
+<!-- saved from url=(0081)https://courses.grainger.illinois.edu/ece498dsu/sp2020/assignments/mini-project3/ -->
 <html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style=""><head lang="en-us"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
 <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
@@ -302,6 +302,10 @@ Read the change log below carefully and revise your answers accordingly.
 A list of changes so far include:</p>
 
 <ul>
+<li>04/13/2020 - Fix language for task 1 last question</li>
+<li>04/10/2020 - CP1 Template Released</li>
+<li>04/08/2020 - Fix instruction of task 1 DNS part 2, plotting a distribution instead of a histogram</li>
+<li>04/04/2020 - Fix instructions in personal device setup</li>
 <li>04/01/2020 - Add detail personal device setup instructions using Python virtual environment.</li>
 </ul>
 <p></p>
@@ -456,7 +460,7 @@ A list of changes so far include:</p>
 <td></td>
 <td></td>
 <td>Checkpoints report templates</td>
-<td>Template PPT for CP report submissions (to be released close to due date).</td>
+<td><a href="https://courses.grainger.illinois.edu/ece498dsu/sp2020/secure/mp/mp3/netid_MP3_CP1.pptx">CP1 Template</a></td>
 </tr>
 </tbody>
 </table>
@@ -527,12 +531,12 @@ To check if python is indeed running from the virtual environment, do</p>
 <pre><code class="hljs nginx"><span class="hljs-attribute">deactivate</span>
 </code></pre>
 
-<p>then</p>
+<p>then activate (same as in step 5)</p>
 
 <pre><code class="hljs bash"><span class="hljs-built_in">source</span> &lt;path to virtual environment folder&gt;/bin/activate
 </code></pre></li>
 
-<li><p>Run your mp3 notebooks by</p>
+<li><p>Run your mp3 notebooks by (make sure you have activated the virtual environment)</p>
 
 <pre><code class="hljs xml">jupyter notebook <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">to</span> <span class="hljs-attr">mp3</span> <span class="hljs-attr">folder</span>&gt;</span>
 </code></pre></li>
@@ -540,7 +544,7 @@ To check if python is indeed running from the virtual environment, do</p>
 <li><p>If encounter error, make sure that wireshark, (tshark additionally in Linux) is installed. Specifically, if you encounter event loop error when running Pyshark, you should check if your notebook and tornado package versions are the same as in the <strong>requirements.txt</strong>.</p></li>
 </ol>
 
-<h3 id="in-terminal-for-windows-users">In terminal for <strong>Windows</strong> users:</h3>
+<h3 id="in-terminal-for-windows-users-if-you-don-t-have-python3-or-pip-download-and-install-it-first-follow-the-official-instructions">In terminal for <strong>Windows</strong> users (if you don’t have Python3 or pip, download and install it first follow the official instructions):</h3>
 
 <ol>
 <li><p>Install python virtual environment using <strong>pip3</strong></p>
@@ -586,7 +590,7 @@ To check if python is indeed running from the virtual environment, do</p>
 
 <p>To check if the packages are installed, go to</p>
 
-<pre><code class="hljs cpp">&lt;path to <span class="hljs-keyword">virtual</span> environment folder&gt;\bin\
+<pre><code class="hljs cpp">&lt;path to <span class="hljs-keyword">virtual</span> environment folder&gt;\Lib\site-packages
 </code></pre>
 
 <p>and see if the package executables such as jupyter are present.</p></li>
@@ -596,12 +600,12 @@ To check if python is indeed running from the virtual environment, do</p>
 <pre><code class="hljs nginx"><span class="hljs-attribute">deactivate</span>
 </code></pre>
 
-<p>then</p>
+<p>then (same as in step 5)</p>
 
 <pre><code class="hljs cpp">&lt;path to <span class="hljs-keyword">virtual</span> environment folder&gt;\Scripts\activate
 </code></pre></li>
 
-<li><p>Run your mp3 notebooks by</p>
+<li><p>Run your mp3 notebooks by (make sure you have activated the virtual environment)</p>
 
 <pre><code class="hljs xml">jupyter notebook <span class="hljs-tag">&lt;<span class="hljs-name">path</span> <span class="hljs-attr">to</span> <span class="hljs-attr">mp3</span> <span class="hljs-attr">folder</span>&gt;</span>
 </code></pre></li>
@@ -887,9 +891,8 @@ Do you observe any evidence that the attacker extracted the internal host names 
 
 <p><em>Hint: The attacker-controlled DNS server is behind the same network that hosts the kernel module in the HTTP task (Task 1.2).</em></p></li>
 
-<li><p>Plot a <strong>histogram</strong> of the length of DNS queries for the two DNS servers on the same plot.
-Clearly label the two servers using different colors/styles.
-<strong>Use log scale for the count on the Y axis.</strong></p></li>
+<li><p>Plot a <strong>distribution</strong> of the length of DNS queries to the two DNS servers on the same plot.
+Clearly label the two servers using different colors/styles.</p></li>
 </ol>
 
 <h2 id="task-2-setup">Task 2 Setup</h2>
